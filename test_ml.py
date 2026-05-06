@@ -67,23 +67,63 @@
 
 #simple project read data from csv file
 
-import pandas as pd
-from sklearn.linear_model import LinearRegression
+# import pandas as pd
+# from sklearn.linear_model import LinearRegression
 
-df = pd.read_csv("data.csv")
+# df = pd.read_csv("data.csv")
 
-# print("csv data is", df)
+# # print("csv data is", df)
 
-X = df[["hours"]]
-y= df['result']
+# X = df[["hours"]]
+# y= df['result']
 
-model = LinearRegression()
-model.fit(X,y)
+# model = LinearRegression()
+# model.fit(X,y)
 
-new_data=pd.DataFrame({
-    "hours": [12]
-})
+# new_data=pd.DataFrame({
+#     "hours": [12]
+# })
 
-prediction = model.predict(new_data)
+# prediction = model.predict(new_data)
 
-print("prediction is", prediction)
+# print("prediction is", prediction)
+
+
+# model save project 
+
+# import pandas as pd
+# import joblib
+
+# from sklearn.linear_model import LinearRegression
+
+# df = pd.read_csv("data.csv")
+
+# X=df[["hours"]]
+# y=df["result"]
+
+# model= LinearRegression()
+
+# model.fit(X,y)
+
+# joblib.dump(model, "model.pkl")
+
+# print("model saved !")
+
+
+# load model 
+
+# import joblib
+# import pandas as pd
+
+# model = joblib.load("model.pkl")
+
+# # print("model pkl is", model)
+
+
+# new_data = pd.DataFrame({
+#     "hours": [15]
+# })
+
+# prediction = model.predict(new_data)
+
+# print("Prediction:", prediction)
