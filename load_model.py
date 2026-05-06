@@ -17,3 +17,13 @@ prediction = model.predict(new_data)
 print("Prediction:", prediction)
 
 
+# MLOps Course
+# Day 6: FastAPI ML API
+# MLOps Beginner to API Course Day 6 continue”
+
+
+
+
+
+
+

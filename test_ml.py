@@ -127,3 +127,26 @@
 # prediction = model.predict(new_data)
 
 # print("Prediction:", prediction)
+
+
+
+
+# model serving simple project 
+
+from fastapi import FastAPI
+import joblib
+import pandas as pd
+
+app = FastAPI()
+
+model = joblib.load("model.pkl")
+
+@app.get("/")
+def home():
+    return {"message": "ml api is running"}
+
+@app.get("/predict")
+def predict(hours: int):
+    data = pd.DataFrame({"hours": [hours]})
+    prediction = model.predict(data)
+    return {"prediction": prediction.tolist()}
