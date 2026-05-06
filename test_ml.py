@@ -35,26 +35,53 @@
 # simple project with pandas
 
 
-import pandas as pd
+# import pandas as pd
 
+# from sklearn.linear_model import LinearRegression
+
+
+# data = {
+#     "hours":[1,2,3,4,5],
+#     "result":[2,4,6,8,10]
+# }
+
+# df=pd.DataFrame(data)
+
+# X = df[["hours"]]
+# y= df["result"]
+
+# model = LinearRegression()
+# model.fit(X,y)
+
+# new_data = pd.DataFrame({
+#     "hours": [10]
+# })
+
+# prediction = model.predict(new_data)
+
+# print("prediction is", prediction)
+
+
+
+
+
+#simple project read data from csv file
+
+import pandas as pd
 from sklearn.linear_model import LinearRegression
 
+df = pd.read_csv("data.csv")
 
-data = {
-    "hours":[1,2,3,4,5],
-    "result":[2,4,6,8,10]
-}
-
-df=pd.DataFrame(data)
+# print("csv data is", df)
 
 X = df[["hours"]]
-y= df["result"]
+y= df['result']
 
 model = LinearRegression()
 model.fit(X,y)
 
-new_data = pd.DataFrame({
-    "hours": [10]
+new_data=pd.DataFrame({
+    "hours": [12]
 })
 
 prediction = model.predict(new_data)
