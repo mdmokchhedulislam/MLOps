@@ -1,0 +1,23 @@
+artifact_path: file:C:/Users/mokchhedul islam/Desktop/learning/MLOps/mlruns/1/models/m-735022954ec342489fbec761c12f38b7/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.14.0
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.12.0
+model_id: m-735022954ec342489fbec761c12f38b7
+model_size_bytes: 21087
+model_uuid: m-735022954ec342489fbec761c12f38b7
+prompts: null
+run_id: 7c1fde3d71c74bca9700f03ba7cd2164
+utc_time_created: '2026-05-07 10:54:45.389119'
