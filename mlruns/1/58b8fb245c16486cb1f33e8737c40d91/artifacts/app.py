@@ -226,14 +226,6 @@ with mlflow.start_run():
     mlflow.log_artifact("Confusion-matrix.png")
     mlflow.log_artifact(__file__)
 
-    # tags
-
-    mlflow.set_tags("author":'mokchhedul', "project": 'wine classification')
-
-    # log the model
-
-    mlflow.sklearn.log_model(rf, "random-forest-model")
-
 
 
 
